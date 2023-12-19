@@ -1,0 +1,51 @@
+- hosts: all
+  vars:
+    app_name: app_name
+    app_path: /var/www/
+    db_name: db_name
+    db_user: db_user
+    db_password: db_password
+    site_domain: example.com
+    secret_key: key
+  tasks:
+    - name: Creates project directory
+      file:
+        path: "{{ app_path }}{{ app_name }}"
+        state: directory
+
+    - name: Copy docker-compose.yml
+      copy:
+        src: ../docker/docker-compose.yml
+        dest: "{{ app_path }}{{ app_name }}"
+
+    - name: Copy nginx.conf
+      copy:
+        src: ../docker/nginx.conf
+        dest: "{{ app_path }}{{ app_name }}"
+
+    - name: Copy robots.txt
+      copy:
+        src: ../robots.txt
+        dest: "{{ app_path }}{{ app_name }}"
+
+    - name: Copy .env.example
+      copy:
+        src: ../../.env.example
+        dest: "{{ app_path }}{{ app_name }}"
+
+    - include_role:
+        name: ansible-dotenv-generator
+      dotenv_sample: "{{ app_path }}{{ app_name }}/.env.example"
+      env:
+        SITE_DOMAIN: "{{ site_domain }}"
+        SECRET_KEY: "{{ secret_key }}"
+        DOCKER_DB_NAME: "{{ db_name }}"
+        DOCKER_DB_USER: "{{ db_user }}"
+        DOCKER_DB_PASSWORD: "{{ db_password }}"
+        DATABASE_URL: "pgsql://{{ db_user }}:{{ db_password }}@db:5432/{{ db_name }}"
+      dest: "{{ app_path }}{{ app_name }}/.env"
+    # create docker volumes dirs
+    # login nexus
+    # docker pull from nexus
+    # docker compose stop
+    # docker compose up

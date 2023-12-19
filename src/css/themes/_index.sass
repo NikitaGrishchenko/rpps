@@ -1,0 +1,32 @@
+@charset 'UTF-8'
+
+@import 'default'
+
+\:root
+  --q-primary: #{$primary}
+
+  --q-secondary: #{$secondary}
+
+  --q-accent: #{$accent}
+  --q-accent-1: #{$accent-1}
+  --q-accent-2: #{$accent-2}
+
+  --q-dark: #{$dark}
+  --q-dark-page: #{$dark-page}
+
+  --q-positive: #{$positive}
+  --q-negative: #{$negative}
+  --q-info: #{$info}
+  --q-warning: #{$warning}
+
+$color-variants: 2
+
+@for $i from 1 through $color-variants
+  .text-accent-#{$i}
+    color: color(accent-#{$i})
+  // .text-secondary-#{$i}
+  //   color: color(secondary-#{$i})
+  .bg-accent-#{$i}
+    background: color(accent-#{$i}) !important
+  // .bg-secondary-#{$i}
+  //   background: color(secondary-#{$i})

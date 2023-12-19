@@ -1,0 +1,2127 @@
+[
+  {
+    "model": "questioning.questionnaire",
+    "pk": 1,
+    "fields": { "name": "Анкета 2020", "status": 2 }
+  },
+  {
+    "model": "questioning.maincategoryquestionnaire",
+    "pk": 1,
+    "fields": { "number": 1, "reference_category": 5, "questionnaire": 1 }
+  },
+  {
+    "model": "questioning.maincategoryquestionnaire",
+    "pk": 2,
+    "fields": { "number": 2, "reference_category": 2, "questionnaire": 1 }
+  },
+  {
+    "model": "questioning.maincategoryquestionnaire",
+    "pk": 3,
+    "fields": { "number": 3, "reference_category": 3, "questionnaire": 1 }
+  },
+  {
+    "model": "questioning.maincategoryquestionnaire",
+    "pk": 4,
+    "fields": { "number": 4, "reference_category": 4, "questionnaire": 1 }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 1,
+    "fields": {
+      "number": 1,
+      "reference_category": 1,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 2,
+    "fields": {
+      "number": 1,
+      "reference_category": 2,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 1,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 3,
+    "fields": {
+      "number": 1,
+      "reference_category": 3,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 2,
+      "type_category": 1,
+      "rating": null,
+      "weight": 100.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 4,
+    "fields": {
+      "number": 2,
+      "reference_category": 4,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 2,
+      "type_category": 1,
+      "rating": null,
+      "weight": 60.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 5,
+    "fields": {
+      "number": 3,
+      "reference_category": 5,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 2,
+      "type_category": 1,
+      "rating": null,
+      "weight": 40.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 6,
+    "fields": {
+      "number": 2,
+      "reference_category": 6,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 1,
+      "type_category": 1,
+      "rating": null,
+      "weight": 30.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 7,
+    "fields": {
+      "number": 3,
+      "reference_category": 7,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 1,
+      "type_category": 1,
+      "rating": null,
+      "weight": 30.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 8,
+    "fields": {
+      "number": 2,
+      "reference_category": 8,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 9,
+    "fields": {
+      "number": 1,
+      "reference_category": 9,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 8,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 10,
+    "fields": {
+      "number": 1,
+      "reference_category": 10,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 9,
+      "type_category": 1,
+      "rating": null,
+      "weight": 450.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 11,
+    "fields": {
+      "number": 2,
+      "reference_category": 11,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 9,
+      "type_category": 1,
+      "rating": null,
+      "weight": 250.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 12,
+    "fields": {
+      "number": 3,
+      "reference_category": 12,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 9,
+      "type_category": 1,
+      "rating": null,
+      "weight": 150.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 13,
+    "fields": {
+      "number": 2,
+      "reference_category": 13,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 8,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 14,
+    "fields": {
+      "number": 1,
+      "reference_category": 14,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 13,
+      "type_category": 1,
+      "rating": null,
+      "weight": 450.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 15,
+    "fields": {
+      "number": 2,
+      "reference_category": 15,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 13,
+      "type_category": 1,
+      "rating": null,
+      "weight": 250.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 16,
+    "fields": {
+      "number": 3,
+      "reference_category": 16,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 13,
+      "type_category": 1,
+      "rating": null,
+      "weight": 150.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 17,
+    "fields": {
+      "number": 3,
+      "reference_category": 17,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 18,
+    "fields": {
+      "number": 1,
+      "reference_category": 9,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 17,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 19,
+    "fields": {
+      "number": 1,
+      "reference_category": 10,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 18,
+      "type_category": 1,
+      "rating": null,
+      "weight": 650.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 20,
+    "fields": {
+      "number": 2,
+      "reference_category": 11,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 18,
+      "type_category": 1,
+      "rating": null,
+      "weight": 350.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 21,
+    "fields": {
+      "number": 3,
+      "reference_category": 12,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 18,
+      "type_category": 1,
+      "rating": null,
+      "weight": 200.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 22,
+    "fields": {
+      "number": 4,
+      "reference_category": 19,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 30.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 23,
+    "fields": {
+      "number": 5,
+      "reference_category": 20,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 24,
+    "fields": {
+      "number": 1,
+      "reference_category": 21,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 23,
+      "type_category": 1,
+      "rating": null,
+      "weight": 10.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 25,
+    "fields": {
+      "number": 2,
+      "reference_category": 22,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 23,
+      "type_category": 1,
+      "rating": null,
+      "weight": 5.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 26,
+    "fields": {
+      "number": 6,
+      "reference_category": 23,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 15.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 27,
+    "fields": {
+      "number": 7,
+      "reference_category": 24,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 20.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 28,
+    "fields": {
+      "number": 8,
+      "reference_category": 25,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 6.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 29,
+    "fields": {
+      "number": 9,
+      "reference_category": 26,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 100.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 30,
+    "fields": {
+      "number": 10,
+      "reference_category": 27,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 300.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 31,
+    "fields": {
+      "number": 11,
+      "reference_category": 28,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 50.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 32,
+    "fields": {
+      "number": 12,
+      "reference_category": 29,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 4.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 33,
+    "fields": {
+      "number": 13,
+      "reference_category": 30,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 34,
+    "fields": {
+      "number": 1,
+      "reference_category": 31,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 33,
+      "type_category": 1,
+      "rating": null,
+      "weight": 10.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 35,
+    "fields": {
+      "number": 2,
+      "reference_category": 32,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 33,
+      "type_category": 1,
+      "rating": null,
+      "weight": 5.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 36,
+    "fields": {
+      "number": 3,
+      "reference_category": 33,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 33,
+      "type_category": 1,
+      "rating": null,
+      "weight": 3.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 37,
+    "fields": {
+      "number": 14,
+      "reference_category": 34,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 100.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 38,
+    "fields": {
+      "number": 15,
+      "reference_category": 35,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 50.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 39,
+    "fields": {
+      "number": 16,
+      "reference_category": 36,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 100.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 40,
+    "fields": {
+      "number": 17,
+      "reference_category": 37,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 50.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 41,
+    "fields": {
+      "number": 18,
+      "reference_category": 38,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 20.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 42,
+    "fields": {
+      "number": 19,
+      "reference_category": 39,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 20.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 43,
+    "fields": {
+      "number": 20,
+      "reference_category": 40,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 15.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 44,
+    "fields": {
+      "number": 21,
+      "reference_category": 41,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 45,
+    "fields": {
+      "number": 1,
+      "reference_category": 42,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 44,
+      "type_category": 1,
+      "rating": null,
+      "weight": 15.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 46,
+    "fields": {
+      "number": 2,
+      "reference_category": 43,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 44,
+      "type_category": 1,
+      "rating": null,
+      "weight": 10.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 47,
+    "fields": {
+      "number": 22,
+      "reference_category": 44,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 48,
+    "fields": {
+      "number": 1,
+      "reference_category": 42,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 47,
+      "type_category": 1,
+      "rating": null,
+      "weight": 50.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 49,
+    "fields": {
+      "number": 2,
+      "reference_category": 43,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 47,
+      "type_category": 1,
+      "rating": null,
+      "weight": 15.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 50,
+    "fields": {
+      "number": 23,
+      "reference_category": 45,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 51,
+    "fields": {
+      "number": 1,
+      "reference_category": 42,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 50,
+      "type_category": 1,
+      "rating": null,
+      "weight": 20.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 52,
+    "fields": {
+      "number": 2,
+      "reference_category": 43,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 50,
+      "type_category": 1,
+      "rating": null,
+      "weight": 10.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 53,
+    "fields": {
+      "number": 24,
+      "reference_category": 46,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 54,
+    "fields": {
+      "number": 1,
+      "reference_category": 47,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 53,
+      "type_category": 1,
+      "rating": null,
+      "weight": 20.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 55,
+    "fields": {
+      "number": 2,
+      "reference_category": 48,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 53,
+      "type_category": 1,
+      "rating": null,
+      "weight": 10.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 56,
+    "fields": {
+      "number": 25,
+      "reference_category": 49,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 5.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 57,
+    "fields": {
+      "number": 26,
+      "reference_category": 50,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 58,
+    "fields": {
+      "number": 1,
+      "reference_category": 52,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 57,
+      "type_category": 1,
+      "rating": null,
+      "weight": 5.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 59,
+    "fields": {
+      "number": 2,
+      "reference_category": 51,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 57,
+      "type_category": 1,
+      "rating": null,
+      "weight": 3.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 60,
+    "fields": {
+      "number": 27,
+      "reference_category": 53,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 10.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 61,
+    "fields": {
+      "number": 28,
+      "reference_category": 54,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 62,
+    "fields": {
+      "number": 1,
+      "reference_category": 55,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 61,
+      "type_category": 1,
+      "rating": null,
+      "weight": 10.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 63,
+    "fields": {
+      "number": 2,
+      "reference_category": 56,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 61,
+      "type_category": 1,
+      "rating": null,
+      "weight": 20.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 64,
+    "fields": {
+      "number": 29,
+      "reference_category": 57,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 10.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 65,
+    "fields": {
+      "number": 30,
+      "reference_category": 58,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 10.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 66,
+    "fields": {
+      "number": 31,
+      "reference_category": 59,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 67,
+    "fields": {
+      "number": 1,
+      "reference_category": 60,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 66,
+      "type_category": 1,
+      "rating": null,
+      "weight": 10.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 68,
+    "fields": {
+      "number": 2,
+      "reference_category": 61,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 66,
+      "type_category": 1,
+      "rating": null,
+      "weight": 20.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 69,
+    "fields": {
+      "number": 32,
+      "reference_category": 62,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 5.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 70,
+    "fields": {
+      "number": 33,
+      "reference_category": 63,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 71,
+    "fields": {
+      "number": 1,
+      "reference_category": 64,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 70,
+      "type_category": 3,
+      "rating": null,
+      "weight": 1.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 72,
+    "fields": {
+      "number": 2,
+      "reference_category": 9,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 70,
+      "type_category": 3,
+      "rating": null,
+      "weight": 10.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 73,
+    "fields": {
+      "number": 3,
+      "reference_category": 65,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 70,
+      "type_category": 3,
+      "rating": null,
+      "weight": 10.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 74,
+    "fields": {
+      "number": 34,
+      "reference_category": 66,
+      "periodicity": null,
+      "main_category": 1,
+      "parent": null,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 75,
+    "fields": {
+      "number": 1,
+      "reference_category": 64,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 74,
+      "type_category": 3,
+      "rating": null,
+      "weight": 0.3
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 76,
+    "fields": {
+      "number": 2,
+      "reference_category": 9,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 74,
+      "type_category": 3,
+      "rating": null,
+      "weight": 1.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 77,
+    "fields": {
+      "number": 3,
+      "reference_category": 65,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 74,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 78,
+    "fields": {
+      "number": 35,
+      "reference_category": 67,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 80.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 79,
+    "fields": {
+      "number": 36,
+      "reference_category": 68,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 40.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 80,
+    "fields": {
+      "number": 37,
+      "reference_category": 69,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 20.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 81,
+    "fields": {
+      "number": 38,
+      "reference_category": 70,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 10.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 82,
+    "fields": {
+      "number": 39,
+      "reference_category": 71,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 4.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 83,
+    "fields": {
+      "number": 40,
+      "reference_category": 72,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": 3,
+      "rating": null,
+      "weight": -1.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 84,
+    "fields": {
+      "number": 41,
+      "reference_category": 73,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": 3,
+      "rating": null,
+      "weight": 1.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 85,
+    "fields": {
+      "number": 42,
+      "reference_category": 74,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 8.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 86,
+    "fields": {
+      "number": 43,
+      "reference_category": 75,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 1.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 87,
+    "fields": {
+      "number": 44,
+      "reference_category": 76,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 25.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 88,
+    "fields": {
+      "number": 45,
+      "reference_category": 77,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 10.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 89,
+    "fields": {
+      "number": 46,
+      "reference_category": 78,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 90,
+    "fields": {
+      "number": 47,
+      "reference_category": 79,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 8.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 91,
+    "fields": {
+      "number": 48,
+      "reference_category": 80,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 4.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 92,
+    "fields": {
+      "number": 49,
+      "reference_category": 81,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 25.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 93,
+    "fields": {
+      "number": 50,
+      "reference_category": 82,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 94,
+    "fields": {
+      "number": 1,
+      "reference_category": 83,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 93,
+      "type_category": 1,
+      "rating": null,
+      "weight": 1.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 95,
+    "fields": {
+      "number": 2,
+      "reference_category": 84,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 93,
+      "type_category": 1,
+      "rating": null,
+      "weight": 5.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 96,
+    "fields": {
+      "number": 51,
+      "reference_category": 85,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 5.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 97,
+    "fields": {
+      "number": 52,
+      "reference_category": 86,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 15.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 98,
+    "fields": {
+      "number": 53,
+      "reference_category": 87,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 5.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 99,
+    "fields": {
+      "number": 54,
+      "reference_category": 88,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 300.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 100,
+    "fields": {
+      "number": 55,
+      "reference_category": 89,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 300.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 101,
+    "fields": {
+      "number": 56,
+      "reference_category": 90,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 20.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 102,
+    "fields": {
+      "number": 57,
+      "reference_category": 91,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 20.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 103,
+    "fields": {
+      "number": 58,
+      "reference_category": 92,
+      "periodicity": null,
+      "main_category": 2,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 50.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 104,
+    "fields": {
+      "number": 59,
+      "reference_category": 93,
+      "periodicity": null,
+      "main_category": 3,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 1.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 105,
+    "fields": {
+      "number": 60,
+      "reference_category": 94,
+      "periodicity": null,
+      "main_category": 3,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 10.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 106,
+    "fields": {
+      "number": 61,
+      "reference_category": 95,
+      "periodicity": null,
+      "main_category": 3,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 5.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 107,
+    "fields": {
+      "number": 62,
+      "reference_category": 96,
+      "periodicity": null,
+      "main_category": 3,
+      "parent": null,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 108,
+    "fields": {
+      "number": 1,
+      "reference_category": 97,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 107,
+      "type_category": 1,
+      "rating": null,
+      "weight": 15.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 109,
+    "fields": {
+      "number": 2,
+      "reference_category": 98,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 107,
+      "type_category": 1,
+      "rating": null,
+      "weight": 10.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 110,
+    "fields": {
+      "number": 3,
+      "reference_category": 99,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 107,
+      "type_category": 1,
+      "rating": null,
+      "weight": 5.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 111,
+    "fields": {
+      "number": 63,
+      "reference_category": 100,
+      "periodicity": null,
+      "main_category": 3,
+      "parent": null,
+      "type_category": 2,
+      "rating": 1,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 112,
+    "fields": {
+      "number": 64,
+      "reference_category": 101,
+      "periodicity": null,
+      "main_category": 3,
+      "parent": null,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 113,
+    "fields": {
+      "number": 1,
+      "reference_category": 97,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 112,
+      "type_category": 1,
+      "rating": null,
+      "weight": 20.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 114,
+    "fields": {
+      "number": 2,
+      "reference_category": 98,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 112,
+      "type_category": 1,
+      "rating": null,
+      "weight": 15.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 115,
+    "fields": {
+      "number": 3,
+      "reference_category": 99,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 112,
+      "type_category": 1,
+      "rating": null,
+      "weight": 10.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 116,
+    "fields": {
+      "number": 65,
+      "reference_category": 102,
+      "periodicity": null,
+      "main_category": 3,
+      "parent": null,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 117,
+    "fields": {
+      "number": 1,
+      "reference_category": 97,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 116,
+      "type_category": 1,
+      "rating": null,
+      "weight": 15.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 118,
+    "fields": {
+      "number": 2,
+      "reference_category": 98,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 116,
+      "type_category": 1,
+      "rating": null,
+      "weight": 10.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 119,
+    "fields": {
+      "number": 3,
+      "reference_category": 99,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 116,
+      "type_category": 1,
+      "rating": null,
+      "weight": 5.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 120,
+    "fields": {
+      "number": 66,
+      "reference_category": 103,
+      "periodicity": null,
+      "main_category": 3,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 3.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 121,
+    "fields": {
+      "number": 67,
+      "reference_category": 104,
+      "periodicity": null,
+      "main_category": 3,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 3.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 122,
+    "fields": {
+      "number": 68,
+      "reference_category": 105,
+      "periodicity": null,
+      "main_category": 3,
+      "parent": null,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 123,
+    "fields": {
+      "number": 1,
+      "reference_category": 42,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 122,
+      "type_category": 1,
+      "rating": null,
+      "weight": 10.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 124,
+    "fields": {
+      "number": 2,
+      "reference_category": 43,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 122,
+      "type_category": 1,
+      "rating": null,
+      "weight": 5.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 125,
+    "fields": {
+      "number": 69,
+      "reference_category": 106,
+      "periodicity": null,
+      "main_category": 4,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 10.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 126,
+    "fields": {
+      "number": 70,
+      "reference_category": 107,
+      "periodicity": null,
+      "main_category": 4,
+      "parent": null,
+      "type_category": 1,
+      "rating": null,
+      "weight": 5.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 127,
+    "fields": {
+      "number": 71,
+      "reference_category": 108,
+      "periodicity": null,
+      "main_category": 4,
+      "parent": null,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 128,
+    "fields": {
+      "number": 1,
+      "reference_category": 109,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 127,
+      "type_category": 1,
+      "rating": null,
+      "weight": 50.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 129,
+    "fields": {
+      "number": 2,
+      "reference_category": 110,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 127,
+      "type_category": 1,
+      "rating": null,
+      "weight": 50.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 130,
+    "fields": {
+      "number": 3,
+      "reference_category": 111,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 127,
+      "type_category": 1,
+      "rating": null,
+      "weight": 20.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 131,
+    "fields": {
+      "number": 4,
+      "reference_category": 112,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 127,
+      "type_category": 1,
+      "rating": null,
+      "weight": 15.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 132,
+    "fields": {
+      "number": 5,
+      "reference_category": 113,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 127,
+      "type_category": 1,
+      "rating": null,
+      "weight": 5.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 133,
+    "fields": {
+      "number": 72,
+      "reference_category": 114,
+      "periodicity": null,
+      "main_category": 4,
+      "parent": null,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 134,
+    "fields": {
+      "number": 1,
+      "reference_category": 115,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 133,
+      "type_category": 1,
+      "rating": null,
+      "weight": 100.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 135,
+    "fields": {
+      "number": 2,
+      "reference_category": 116,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 133,
+      "type_category": 1,
+      "rating": null,
+      "weight": 80.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 136,
+    "fields": {
+      "number": 3,
+      "reference_category": 117,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 133,
+      "type_category": 1,
+      "rating": null,
+      "weight": 50.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 137,
+    "fields": {
+      "number": 4,
+      "reference_category": 118,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 133,
+      "type_category": 1,
+      "rating": null,
+      "weight": 35.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 138,
+    "fields": {
+      "number": 5,
+      "reference_category": 119,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 133,
+      "type_category": 1,
+      "rating": null,
+      "weight": 5.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 139,
+    "fields": {
+      "number": 6,
+      "reference_category": 120,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 133,
+      "type_category": 1,
+      "rating": null,
+      "weight": 5.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 140,
+    "fields": {
+      "number": 7,
+      "reference_category": 121,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 133,
+      "type_category": 1,
+      "rating": null,
+      "weight": 5.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 141,
+    "fields": {
+      "number": 8,
+      "reference_category": 122,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 133,
+      "type_category": 1,
+      "rating": null,
+      "weight": 5.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 142,
+    "fields": {
+      "number": 9,
+      "reference_category": 123,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 133,
+      "type_category": 1,
+      "rating": null,
+      "weight": 5.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 143,
+    "fields": {
+      "number": 73,
+      "reference_category": 124,
+      "periodicity": null,
+      "main_category": 4,
+      "parent": null,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 144,
+    "fields": {
+      "number": 1,
+      "reference_category": 125,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 143,
+      "type_category": 1,
+      "rating": null,
+      "weight": 15.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 145,
+    "fields": {
+      "number": 2,
+      "reference_category": 126,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 143,
+      "type_category": 1,
+      "rating": null,
+      "weight": 5.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 146,
+    "fields": {
+      "number": 3,
+      "reference_category": 127,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 143,
+      "type_category": 1,
+      "rating": null,
+      "weight": 3.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 147,
+    "fields": {
+      "number": 2,
+      "reference_category": 128,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 17,
+      "type_category": null,
+      "rating": null,
+      "weight": null
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 148,
+    "fields": {
+      "number": 1,
+      "reference_category": 14,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 147,
+      "type_category": 1,
+      "rating": null,
+      "weight": 650.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 149,
+    "fields": {
+      "number": 2,
+      "reference_category": 15,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 147,
+      "type_category": 1,
+      "rating": null,
+      "weight": 350.0
+    }
+  },
+  {
+    "model": "questioning.categoryquestionnaire",
+    "pk": 150,
+    "fields": {
+      "number": 3,
+      "reference_category": 16,
+      "periodicity": null,
+      "main_category": null,
+      "parent": 147,
+      "type_category": 1,
+      "rating": null,
+      "weight": 200.0
+    }
+  }
+]

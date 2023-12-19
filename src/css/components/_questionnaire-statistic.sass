@@ -1,0 +1,53 @@
+@charset 'UTF-8'
+
+.questionnaire-statistic
+  height: 80px
+  margin: 20px 0px 20px 0
+  &__user
+    &-info
+      font-size: 40px
+      font-weight: 600
+    &-department
+      font-size: 1.6rem
+  &__left-block
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 1px solid #CFD7FF
+    height: 100%
+    font-size: 36px
+    color: transparentize($primary, .5)
+    &__points
+      color: $primary
+    &__percentages
+      color: transparentize($primary, .5)
+  &__center-block
+    display: flex
+    justify-content: space-around
+    align-items: center
+    border: 1px solid #CFD7FF
+    height: 100%
+    &__item
+      display: flex
+    &__name
+      font-size: 22px
+      color: transparentize($primary, .5)
+    &__points
+      color: $primary
+
+      font-size: 22px
+  &__button
+    display: flex
+    align-items: center
+    justify-content: center
+    background: $primary
+    height: 100%
+    width: 100%
+    color: #fff
+    cursor: pointer
+    &:hover
+      opacity: .9
+    &__p
+      font-weight: 900px
+      font-size: 18px
+      padding-left: 5px

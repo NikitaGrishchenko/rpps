@@ -1,0 +1,1788 @@
+[
+  {
+    "model": "reference.maincategory",
+    "pk": 2,
+    "fields": { "name": "Учебная и методическая работа" }
+  },
+  {
+    "model": "reference.maincategory",
+    "pk": 3,
+    "fields": {
+      "name": "Воспитательная, общественная и спортивно-оздоровительная работа"
+    }
+  },
+  {
+    "model": "reference.maincategory",
+    "pk": 4,
+    "fields": {
+      "name": "Личные достижения и участие в мероприятиях, повышающих имидж Университета"
+    }
+  },
+  {
+    "model": "reference.maincategory",
+    "pk": 5,
+    "fields": {
+      "name": "Научно-исследовательская и инновационная деятельность"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 1,
+    "fields": { "text": "Скан-копия выходных данных монографии" }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 2,
+    "fields": {
+      "text": "Скан-копия выходных данных публикации, скриншот библиометрических показателей журнала (квартиль, процентиль)"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 3,
+    "fields": { "text": "Скан-копия выходных данных публикации" }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 4,
+    "fields": { "text": "Скан-копия патентов" }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 5,
+    "fields": { "text": "Скан-копия свидетельств" }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 6,
+    "fields": { "text": "Справка из редакции журнала" }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 7,
+    "fields": {
+      "text": "Распоряжение проректора по научной работе и инновациям об утверждении программного и организационного комитета, руководителя (модератора) секции (для мероприятий, организатором/соорганизатором которых выступил РГЭУ (РИНХ);Скан-копия программы, заверенная проректором по научной работе и инновациям (для внешних мероприятий)"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 8,
+    "fields": { "text": "Скан-копия приказа о присуждении степени" }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 9,
+    "fields": { "text": "Скан-копия страницы заявки с ФИО участника" }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 10,
+    "fields": { "text": "Подтверждающие сведения предоставляет НИИ" }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 11,
+    "fields": { "text": "Справка из Центра управления проектами Южного НОЦ" }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 12,
+    "fields": {
+      "text": "Справка от организации-партнера, заверенная проректором по научной работе и инновациям"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 13,
+    "fields": {
+      "text": "Подтверждающие сведения предоставляет студенческое бюро"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 15,
+    "fields": { "text": "Скан-копия патента или свидетельства о регистрации" }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 16,
+    "fields": {
+      "text": "Подтверждается копией заявки или скриншотом из личного кабинета информационной системы"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 17,
+    "fields": {
+      "text": "Подтверждается копией документа о выигрыше с указанием ФИО"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 18,
+    "fields": {
+      "text": "Подтверждается копией диплома аспиранта о получении квалификации"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 19,
+    "fields": {
+      "text": "Подтверждается копией благодарности проректора по научной работе и инновациям за подготовку аспиранта"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 20,
+    "fields": {
+      "text": "Подтверждается копией объявления об обсуждении диссертации на кафедре, согласованной с отделом  аспирантуры и докторантуры"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 21,
+    "fields": {
+      "text": "Подтверждается сертификатом о проведении открытой лекции, подписанным проректором по научной работе и инновациям"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 22,
+    "fields": {
+      "text": "Скан-копия с сайта eLibrary.ru, webofscience.com и scopus.com на дату составления анкеты"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 23,
+    "fields": { "text": "Выходные данные учебника" }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 24,
+    "fields": { "text": "Выходные данные учебного пособия" }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 25,
+    "fields": {
+      "text": "Служебная записка заведующего кафедрой, согласованная с отделом лицензирования и аккредитации, институтом магистратуры, отделом аспирантуры и докторантуры"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 26,
+    "fields": {
+      "text": "Информация отдела лицензирования и аккредитации, института магистратуры, отдела аспирантуры и докторантуры. Информация отдела управления качеством"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 27,
+    "fields": {
+      "text": "Служебная записка заведующего кафедрой, согласованная с учебным отделом"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 28,
+    "fields": { "text": "Ксерокопия выходных данных" }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 29,
+    "fields": {
+      "text": "Ксерокопия справки о внедрении с указанием учебной группы, темы и руководителя ВКР"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 30,
+    "fields": {
+      "text": "Служебная записка заведующего кафедрой, согласованная с председателем УМС"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 31,
+    "fields": {
+      "text": "Служебная записка заведующего кафедрой, согласованная с проректором по развитию образовательных программ"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 32,
+    "fields": {
+      "text": "Копии страниц с выходными данными учебников, учебных пособий"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 33,
+    "fields": {
+      "text": "Копии страниц с выходными данными учебно-методических материалов"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 34,
+    "fields": { "text": "Копии документов (диплом, свидетельство)" }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 35,
+    "fields": {
+      "text": "Копии наград, дипломов, свидетельств + подтверждающие сведения предоставляет зав. кафедрой."
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 36,
+    "fields": {
+      "text": "Освоение с внедрением в учебный процесс нового профессионально-ориентированного программного обеспечения, рекомендуемого УМС"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 37,
+    "fields": {
+      "text": "Служебная записка заведующего кафедрой, согласованная с нач.УКУиАД, председателем УМС"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 38,
+    "fields": {
+      "text": "Служебная записка заведующего кафедрой, согласованная с нач.УКУиАД"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 39,
+    "fields": {
+      "text": "Свидетельство об аккредитации, служебная записка заведующего кафедрой, согласованная с проректором по развитию образовательных программ"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 40,
+    "fields": {
+      "text": "Сведения предоставляет отдел лицензирования и аккредитации"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 41,
+    "fields": {
+      "text": "Служебная записка заведующего кафедрой, согласованная с проректором по учебной работе"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 42,
+    "fields": { "text": "Сертификат об успешном освоении курса" }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 43,
+    "fields": { "text": "Декан факультета" }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 44,
+    "fields": {
+      "text": "Подтверждает проректор по воспитательной и спортивно-массовой работе"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 45,
+    "fields": {
+      "text": "Проректор по персоналу и безопасности, начальник штаба ГО"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 46,
+    "fields": { "text": "Сведения представляют проректоры по направлениям" }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 47,
+    "fields": {
+      "text": "Сведения предоставляет проректор по персоналу и безопасности, проректор по научной работе и инновациям; Скан-копия диплома, грамоты, удостоверения к медали  и т.д."
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 48,
+    "fields": {
+      "text": "Сведения предоставляет проректор по персоналу и безопасности"
+    }
+  },
+  {
+    "model": "reference.descriptioncategory",
+    "pk": 49,
+    "fields": {
+      "text": "Сведения представляет Отдел кадров по работе с преподавателями и сотрудниками"
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 1,
+    "fields": {
+      "name": "Монографии (соавторы в долях), в том числе:",
+      "description": 1
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 2,
+    "fields": {
+      "name": "печатные, не менее 500 экземпляров, не менее 10 п.л., не менее 1 п.л. на соавтора, изданные издательствами:",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 3,
+    "fields": {
+      "name": "зарубежными (соавторы в долях, но не менее 20 баллов на соавтора);",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 4,
+    "fields": {
+      "name": "Центральными (соавторы в долях, но не менее 15 баллов на соавтора);",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 5,
+    "fields": {
+      "name": "региональными, вузовскими (соавторы в долях, но не менее 10 баллов на соавтора);",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 6,
+    "fields": {
+      "name": "печатные (кроме учтенных в п.1.1) (соавторы в долях, но не менее 5 баллов на соавтора)",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 7,
+    "fields": {
+      "name": "электронные (соавторы в долях, но не менее 5 баллов на соавтора)",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 8,
+    "fields": {
+      "name": "Публикации в изданиях, индексируемых в информационно-аналитических системах (соавторы в долях авторских п.л.):",
+      "description": 2
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 9,
+    "fields": { "name": "Web of Science", "description": null }
+  },
+  {
+    "model": "reference.category",
+    "pk": 10,
+    "fields": { "name": "квартиль 1", "description": null }
+  },
+  {
+    "model": "reference.category",
+    "pk": 11,
+    "fields": { "name": "квартиль 2", "description": null }
+  },
+  {
+    "model": "reference.category",
+    "pk": 12,
+    "fields": { "name": "квартиль 3-4, в т.ч. нулевой", "description": null }
+  },
+  {
+    "model": "reference.category",
+    "pk": 13,
+    "fields": {
+      "name": "Scopus (кроме учтенных в Web of Science)",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 14,
+    "fields": {
+      "name": "квартиль 1 (кроме учтенных в Web of Science)",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 15,
+    "fields": {
+      "name": "квартиль 2 (кроме учтенных в Web of Science)",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 16,
+    "fields": {
+      "name": "квартиль 3-4, в т.ч. нулевой (кроме учтенных в Web of Science)",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 17,
+    "fields": {
+      "name": "Публикации в изданиях, индексируемых в информационно-аналитических системах Web of Science и Scopus, в соавторстве с иностранными учеными (соавторы в долях авторских п.л.) (кроме учтенных в п. 2)",
+      "description": 2
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 19,
+    "fields": {
+      "name": "Публикации в российских научных журналах, включенных в перечень ВАК (соавторы в долях)",
+      "description": 3
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 20,
+    "fields": {
+      "name": "Публикации материалов конференций (не более 2 публикаций в одном сборнике, не более 3 соавторов, соавторы в долях)",
+      "description": 3
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 21,
+    "fields": { "name": "зарубежных", "description": null }
+  },
+  {
+    "model": "reference.category",
+    "pk": 22,
+    "fields": {
+      "name": "международных и всероссийских и национальных",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 23,
+    "fields": {
+      "name": "Публикации в изданиях, включенных в Российский индекс научного цитирования (РИНЦ) (не указанных в п. 2, п. 4 и п. 5) (не менее 0,3 п.л., не более 2 публикаций в одном сборнике, не более 3 соавторов, соавторы в долях))",
+      "description": 3
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 24,
+    "fields": {
+      "name": "Научные статьи, опубликованные в зарубежных изданиях (кроме указанных в п. 2, п. 3 и п. 5) (не более 2 публикаций в одном сборнике, не более 3 соавторов, соавторы в долях)",
+      "description": 3
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 25,
+    "fields": {
+      "name": "Научные статьи, опубликованные в российских изданиях (кроме указанных в пп. 2-6) (не более 2 публикаций в одном сборнике, не более 3 соавторов, соавторы в долях)",
+      "description": 3
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 26,
+    "fields": {
+      "name": "Патенты России (правообладатель – Университет, автор - разработчик)",
+      "description": 4
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 27,
+    "fields": {
+      "name": "Зарубежные патенты (правообладатель – Университет, автор - разработчик) (соавторы в долях)",
+      "description": 4
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 28,
+    "fields": {
+      "name": "Свидетельства о государственной регистрации программ для ЭВМ, баз данных, топологии интегральных микросхем, выданные Роспатентом (правообладатель – Университет, автор - разработчик)",
+      "description": 5
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 29,
+    "fields": {
+      "name": "Рецензирование статей в журналах, включенных в Перечень ВАК",
+      "description": 6
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 30,
+    "fields": {
+      "name": "Организация  научных конференций, форумов, круглых столов, семинаров, вебинаров, выставок, фестивалей:",
+      "description": 7
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 31,
+    "fields": { "name": "международных", "description": null }
+  },
+  {
+    "model": "reference.category",
+    "pk": 32,
+    "fields": { "name": "всероссийских", "description": null }
+  },
+  {
+    "model": "reference.category",
+    "pk": 33,
+    "fields": { "name": "региональных", "description": null }
+  },
+  {
+    "model": "reference.category",
+    "pk": 34,
+    "fields": {
+      "name": "Присуждение учёной степени доктора наук сотруднику",
+      "description": 8
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 35,
+    "fields": {
+      "name": "Присуждение учёной степени кандидата наук сотруднику",
+      "description": 8
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 36,
+    "fields": {
+      "name": "Присуждение ученой степени доктора наук докторанту (соискателю), научное консультирование которого  осуществлял преподаватель",
+      "description": 8
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 37,
+    "fields": {
+      "name": "Присуждение ученой степени кандидата  наук аспиранту  (соискателю), научное руководство  которого  осуществлял преподаватель, но не позднее одного года после окончания аспирантуры",
+      "description": 8
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 38,
+    "fields": {
+      "name": "Разработка и подача заявки на конкурс (гос. задание, РНФ, РФФИ, гранты Президента)",
+      "description": 9
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 39,
+    "fields": {
+      "name": "Руководство НИР, грантами, проектами (гос. задание, соглашения, гос. контракты, РНФ, РФФИ) не менее критерия, установленного в Положении об эффективном контракте РГЭУ (РИНХ) для соответствующей должности пропорционально выполненному объему средств (кратно",
+      "description": 10
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 40,
+    "fields": {
+      "name": "Участие в НИР, указанных в п. 21, не менее критерия, установленного в Положении об эффективном контракте РГЭУ (РИНХ) для соответствующей должности пропорционально выполненному объему средств (кратно нормативу)",
+      "description": 10
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 41,
+    "fields": {
+      "name": "Выполнение  хоз. договорных НИР не менее критерия, установленного в Положении об эффективном контракте РГЭУ (РИНХ) для соответствующей должности пропорционально выполненному объему средств (кратно нормативу):",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 42,
+    "fields": { "name": "руководство", "description": 10 }
+  },
+  {
+    "model": "reference.category",
+    "pk": 43,
+    "fields": { "name": "участие", "description": null }
+  },
+  {
+    "model": "reference.category",
+    "pk": 44,
+    "fields": {
+      "name": "Выполнение R&D проектов Южного НОЦ «Цифровая трансформация агропромышленного и индустриального комплекса»",
+      "description": 11
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 45,
+    "fields": {
+      "name": "Проведение мероприятий в рамках заключенных договоров и соглашений с индустриальными партнерами",
+      "description": 12
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 46,
+    "fields": {
+      "name": "Медали, дипломы, грамоты, премии, полученные обучающимися под руководством ППС на научных конкурсах и выставках, заявленных и согласованных со студенческим бюро, из них:",
+      "description": 13
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 47,
+    "fields": { "name": "международные и всероссийские", "description": null }
+  },
+  {
+    "model": "reference.category",
+    "pk": 48,
+    "fields": {
+      "name": "региональные, городские, внутривузовские",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 49,
+    "fields": {
+      "name": "Руководство научными работами обучающихся, подготовленными на конкурсы и олимпиады, заявленные и согласованные со студенческим бюро",
+      "description": 13
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 50,
+    "fields": {
+      "name": "Дипломы, грамоты, сертификаты за призовые места, полученные обучающимися под руководством ППС на конференциях и конкурсах:",
+      "description": 13
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 51,
+    "fields": { "name": "межрегиональных, региональных", "description": null }
+  },
+  {
+    "model": "reference.category",
+    "pk": 52,
+    "fields": { "name": "международных и всероссийских", "description": null }
+  },
+  {
+    "model": "reference.category",
+    "pk": 53,
+    "fields": {
+      "name": "Охранные документы, полученные обучающимися на объекты интеллектуальной собственности под руководством ППС (Правообладатель – Университет) (кроме указанных в пп. 9-11)",
+      "description": 15
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 54,
+    "fields": {
+      "name": "Гранты для обучающихся под руководством НПР, в том числе:",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 55,
+    "fields": {
+      "name": "Заявки, поданные на конкурс грантов;",
+      "description": 16
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 56,
+    "fields": { "name": "Гранты, выигранные обучающимися", "description": 17 }
+  },
+  {
+    "model": "reference.category",
+    "pk": 57,
+    "fields": {
+      "name": "Получение сотрудником квалификации «Исследователь. Преподаватель-исследователь» (по итогам обучения в аспирантуре)",
+      "description": 18
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 58,
+    "fields": {
+      "name": "Получение аспирантом квалификации «Исследователь. Преподаватель-исследователь» (по итогам обучения в аспирантуре), научное руководство которым осуществлял сотрудник",
+      "description": 19
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 59,
+    "fields": { "name": "Рецензирование диссертаций", "description": 20 }
+  },
+  {
+    "model": "reference.category",
+    "pk": 60,
+    "fields": {
+      "name": "на соискание учёной степени кандидата наук (не более 2 рецензентов на диссертацию)",
+      "description": 20
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 61,
+    "fields": {
+      "name": "на соискание учёной степени доктора наук (не более 3 рецензентов на диссертацию)",
+      "description": 20
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 62,
+    "fields": {
+      "name": "Проведение открытых лекций для аспирантов и молодых ученых",
+      "description": 21
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 63,
+    "fields": {
+      "name": "Значение индекса Хирша преподавателя, ед.:",
+      "description": 22
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 64,
+    "fields": { "name": "РИНЦ", "description": null }
+  },
+  {
+    "model": "reference.category",
+    "pk": 65,
+    "fields": { "name": "Scopus", "description": null }
+  },
+  {
+    "model": "reference.category",
+    "pk": 66,
+    "fields": {
+      "name": "Цитирование статей, опубликованных в журналах, индексируемых в информационно-аналитических системах, ед.:",
+      "description": 22
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 67,
+    "fields": {
+      "name": "Учебник, опубликованный в отчетном году в центральных изданиях по профилю преподаваемых дисциплин",
+      "description": 23
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 68,
+    "fields": {
+      "name": "Учебное пособие, опубликованное в отчетном году в центральных изданиях по профилю преподаваемых дисциплин",
+      "description": 24
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 69,
+    "fields": {
+      "name": "Учебник или учебное пособие по профилю преподаваемых дисциплин, кроме указанных в пп. 34-35",
+      "description": 24
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 70,
+    "fields": {
+      "name": "Разработка учебного плана для обучающихся",
+      "description": 25
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 71,
+    "fields": {
+      "name": "Разработка рабочей программы по дисциплине, впервые включенной в учебный план (при условии размещения в ЭИОС) (соавторы в долях)",
+      "description": 25
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 72,
+    "fields": {
+      "name": "Отсутствие размещения на сайте РГЭУ (РИНХ) ООП, рабочих программ учебных дисциплин, программ практик, ГИА, аннотаций",
+      "description": 26
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 73,
+    "fields": {
+      "name": "Чтение дисциплины на иностранном языке (кроме преподавателей иностранных языков) в соответствии с утвержденным учебным планом",
+      "description": 27
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 74,
+    "fields": {
+      "name": "Опубликование учебно-методических материалов (методических указаний по различным видам учебной работы), утвержденных в установленном порядке",
+      "description": 28
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 75,
+    "fields": {
+      "name": "Руководство подготовкой выпускной квалификационной работы, выполненной по заявкам предприятий и организаций с последующим внедрением",
+      "description": 29
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 76,
+    "fields": {
+      "name": "Разработка   ОП по направлениям/специальностям подготовки (при условии размещения в ЭИОС) (соавторами в долях)",
+      "description": 25
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 77,
+    "fields": {
+      "name": "Проведение открытой лекции, учебно-методического семинара для обучающихся, ППС (в рамках общеуниверситетского плана, утверждённого УМС)",
+      "description": 30
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 78,
+    "fields": {
+      "name": "Разработка новой дополнительной образовательной программы (при условии реализации)",
+      "description": 31
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 79,
+    "fields": {
+      "name": "Рецензирование учебников, учебных пособий",
+      "description": 32
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 80,
+    "fields": {
+      "name": "Рецензирование учебно-методических материалов",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 81,
+    "fields": {
+      "name": "Победа во всероссийском конкурсе на звание «Лучшая кафедра» (для заведующего кафедрой)",
+      "description": 34
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 82,
+    "fields": {
+      "name": "Медали, дипломы, грамоты и премии, полученные студентами в конкурсе на лучшую ВКР (для руководителя дипломной работы/проекта):",
+      "description": 35
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 83,
+    "fields": { "name": "всероссийском", "description": null }
+  },
+  {
+    "model": "reference.category",
+    "pk": 84,
+    "fields": { "name": "прочих конкурсах", "description": null }
+  },
+  {
+    "model": "reference.category",
+    "pk": 85,
+    "fields": {
+      "name": "Освоение с внедрением в учебный процесс нового профессионально-ориентированного программного обеспечения, рекомендуемого УМС",
+      "description": 36
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 86,
+    "fields": {
+      "name": "Разработка с внедрением в учебный процесс собственных  программных средств, рекомендуемых УМС",
+      "description": 37
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 87,
+    "fields": {
+      "name": "Представление в банк электронных ресурсов вуза мультимедийных электронных курсов по дисциплинам с элементами озвучивания, навигации и оценивания (в долях) в объеме 1 темы рабочей программы",
+      "description": 38
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 88,
+    "fields": {
+      "name": "Международная, профессиональная общественная аккредитация или государственная аккредитация отдельных образовательных программ",
+      "description": 39
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 89,
+    "fields": {
+      "name": "Разработка онлайн-курса для основной или дополнительной образовательной программы",
+      "description": 40
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 90,
+    "fields": {
+      "name": "Руководство студенческой командой , занявшей призовое место на различных конкурсах профессионального мастерства",
+      "description": 41
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 91,
+    "fields": {
+      "name": "Освоение преподавателем онлайн-курса по профилю преподаваемых дисциплин (платформы Coursera, Открытое образование и др.)",
+      "description": 42
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 92,
+    "fields": {
+      "name": "Организация проектно-образовательных мероприятий для обучающихся и (или) сотрудников университета (длительностью не менее 5 дней).",
+      "description": 41
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 93,
+    "fields": {
+      "name": "Проведение профориентационных и культурно-массовых мероприятий в школах, колледжах,и  на других внешних площадках (не более 20)",
+      "description": 43
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 94,
+    "fields": {
+      "name": "Ответственные за спортивно-оздоровительную работу на факультетах (при наличии плана работы)",
+      "description": 44
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 95,
+    "fields": {
+      "name": "Подготовка и проведение мероприятий воспитательного и спортивно-оздоровительного характера (театрализованных представлений, культурно-просветительских, экскурсионных  программ, спортивно-оздоровительных мероприятий)",
+      "description": 44
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 96,
+    "fields": {
+      "name": "Руководство проектами  студентов на конкурсах (волонтерство, популяризация здорового образа жизни, формирование толерантности в молодежной среде, студенческое самоуправление)",
+      "description": 44
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 97,
+    "fields": { "name": "международных, всероссийских", "description": null }
+  },
+  {
+    "model": "reference.category",
+    "pk": 98,
+    "fields": { "name": "областных, городских", "description": null }
+  },
+  {
+    "model": "reference.category",
+    "pk": 99,
+    "fields": { "name": "межвузовских, вузовских", "description": null }
+  },
+  {
+    "model": "reference.category",
+    "pk": 100,
+    "fields": {
+      "name": "Присуждение премии «Лучший преподаватель глазами студентов» в рамках премии «Золотые страницы РИНХа», «Лучший куратор» в рамках премии «Золотые страницы РИНХа», «Лучший заместитель декана по воспитательной и профориентационной работе» по результатам подве",
+      "description": 44
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 101,
+    "fields": {
+      "name": "Руководство спортивными командами Университета, творческими коллективами, завоевавшими награды на соревнованиях (в конкурсах, фестивалях), в т. ч.:",
+      "description": 44
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 102,
+    "fields": {
+      "name": "Участие в судействе культурных и спортивных соревнований (конкурсов, фестивалей)",
+      "description": 44
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 103,
+    "fields": {
+      "name": "Мероприятия по проведению воспитательной работы в общежитии (согласно плану)",
+      "description": 44
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 104,
+    "fields": {
+      "name": "Личные достижения (не более 5 шт.) – 1,2,3 место спортивных, общественных, творческих конкурсов и соревнований уровня не ниже городского",
+      "description": 44
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 105,
+    "fields": {
+      "name": "Реализация в мероприятиях по обеспечению безопасности университета  (ДНД, расчеты по ГО и ЧС и др.)",
+      "description": 45
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 106,
+    "fields": {
+      "name": "Участие в работе комиссии Рособрнадзора, ВАК; а также мероприятиях Администрации РО, комиссий Законодательного Собрания Ростовской области, Общественной палаты РО, министерств и ведомств России и РО, Администрации г. Ростова-на-Дону, общественных объединений и др.",
+      "description": 46
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 107,
+    "fields": {
+      "name": "Работа в комитетах, фондах, комиссиях, экспертных советах, общественных организациях в качестве эксперта.",
+      "description": 46
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 108,
+    "fields": {
+      "name": "Премии, награды, дипломы (полученные в текущем году), в т.ч.:",
+      "description": 47
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 109,
+    "fields": {
+      "name": "премии Президента РФ в области науки и инноваций для молодых ученых",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 110,
+    "fields": {
+      "name": "премии Правительства  РФ в области образования, науки и инноваций",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 111,
+    "fields": {
+      "name": "государственные награды за высокие показатели в сфере науки и образования (орден)",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 112,
+    "fields": {
+      "name": "государственные награды за высокие показатели в сфере науки и образования (медаль)",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 113,
+    "fields": {
+      "name": "диплом, медаль, грамота, благодарственное письмо других организаций (индивидуальные достижения)",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 114,
+    "fields": { "name": "Присуждение званий:", "description": 48 }
+  },
+  {
+    "model": "reference.category",
+    "pk": 115,
+    "fields": { "name": "Заслуженный деятель науки РФ", "description": null }
+  },
+  {
+    "model": "reference.category",
+    "pk": 116,
+    "fields": {
+      "name": "Заслуженный работник высшей школы РФ",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 117,
+    "fields": { "name": "Заслуженный экономист, юрист РФ", "description": null }
+  },
+  {
+    "model": "reference.category",
+    "pk": 118,
+    "fields": { "name": "Почетный работник ВПО РФ", "description": null }
+  },
+  {
+    "model": "reference.category",
+    "pk": 119,
+    "fields": {
+      "name": "Почетная грамота Министерства образования и науки РФ",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 120,
+    "fields": {
+      "name": "Благодарность Министерства образования и науки РФ",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 121,
+    "fields": {
+      "name": "Медаль «Заслуженный сотрудник университета»",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 122,
+    "fields": {
+      "name": "Медаль им. Авдея Ильича Гозулова",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 123,
+    "fields": {
+      "name": "Памятный нагрудный знак «Ветеран труда РГЭУ (РИНХ)»",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 124,
+    "fields": {
+      "name": "Повышение квалификации (дополнительно к установленной законодательством норме 1 раз в 3 года):",
+      "description": 49
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 125,
+    "fields": { "name": "в зарубежных вузах", "description": null }
+  },
+  {
+    "model": "reference.category",
+    "pk": 126,
+    "fields": {
+      "name": "в ведущих вузах России (МГУ, Санкт-Петербургский ГЭУ, Высшая школа экономики, федеральные университеты, научно-исследовательские вузы и др.)",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 127,
+    "fields": {
+      "name": "в ведущих организациях России в области образования и науки",
+      "description": null
+    }
+  },
+  {
+    "model": "reference.category",
+    "pk": 128,
+    "fields": { "name": "Scopus (кроме указанных в п.3.1)", "description": 2 }
+  },
+  {
+    "model": "reference.position",
+    "pk": 1,
+    "fields": { "short_name": "рек", "name": "Ректор", "rsue_id": null }
+  },
+  {
+    "model": "reference.position",
+    "pk": 2,
+    "fields": {
+      "short_name": "проф",
+      "name": "Профессор кафедры",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.position",
+    "pk": 3,
+    "fields": { "short_name": "доц", "name": "Доцент кафедры", "rsue_id": null }
+  },
+  {
+    "model": "reference.position",
+    "pk": 4,
+    "fields": {
+      "short_name": "дек",
+      "name": "Декан факультета",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.position",
+    "pk": 5,
+    "fields": {
+      "short_name": "зав. каф.",
+      "name": "Заведующий(ая) кафедрой",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.position",
+    "pk": 6,
+    "fields": {
+      "short_name": "ст. преп.",
+      "name": "Старший преподаватель",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.position",
+    "pk": 7,
+    "fields": {
+      "short_name": "преп.",
+      "name": "Преподаватель",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.position",
+    "pk": 8,
+    "fields": {
+      "short_name": "тр. преп.",
+      "name": "Тренер-преподаватель",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.position",
+    "pk": 9,
+    "fields": { "short_name": "ассист.", "name": "Ассистент", "rsue_id": null }
+  },
+  {
+    "model": "reference.position",
+    "pk": 10,
+    "fields": {
+      "short_name": "проф. конс.",
+      "name": "Профессор-консультант",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.position",
+    "pk": 11,
+    "fields": {
+      "short_name": "ст.преп.",
+      "name": "старший преподаватель",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.position",
+    "pk": 12,
+    "fields": { "short_name": "стажер", "name": "стажер", "rsue_id": null }
+  },
+  {
+    "model": "reference.position",
+    "pk": 13,
+    "fields": {
+      "short_name": "снс",
+      "name": "старший научный сотрудник",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.faculty",
+    "pk": 1,
+    "fields": {
+      "short_name": "МИП",
+      "name": "Менеджмента и предпринимательства",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.faculty",
+    "pk": 2,
+    "fields": { "short_name": "ТД", "name": "Торгового дела", "rsue_id": null }
+  },
+  {
+    "model": "reference.faculty",
+    "pk": 3,
+    "fields": {
+      "short_name": "КТиИБ",
+      "name": "Компьютерных технологий и информационной безопасности",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.faculty",
+    "pk": 4,
+    "fields": {
+      "short_name": "УЭФ",
+      "name": "Учетно-экономический",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.faculty",
+    "pk": 5,
+    "fields": {
+      "short_name": "ЭиФ",
+      "name": "Экономики и финансов",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.faculty",
+    "pk": 6,
+    "fields": { "short_name": "ЮФ", "name": "Юридический", "rsue_id": null }
+  },
+  {
+    "model": "reference.faculty",
+    "pk": 7,
+    "fields": {
+      "short_name": "ЛИЖ",
+      "name": "Лингвистики и журналистики",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 1,
+    "fields": {
+      "faculty": 1,
+      "short_name": null,
+      "name": "Финансовый менеджмент",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 2,
+    "fields": {
+      "faculty": 1,
+      "short_name": null,
+      "name": "Общий и стратегический менеджмент",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 3,
+    "fields": {
+      "faculty": 1,
+      "short_name": null,
+      "name": "Управление персоналом и социологии",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 4,
+    "fields": {
+      "faculty": 1,
+      "short_name": null,
+      "name": "Государственное, муниципальное управление и экономическая безопасность",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 5,
+    "fields": {
+      "faculty": 1,
+      "short_name": null,
+      "name": "Инновационный менеджмент и предпринимательство",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 6,
+    "fields": {
+      "faculty": 1,
+      "short_name": null,
+      "name": "Антикризисное и корпоративное управление",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 7,
+    "fields": {
+      "faculty": 2,
+      "short_name": null,
+      "name": "Философии и культурологии",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 8,
+    "fields": {
+      "faculty": 2,
+      "short_name": null,
+      "name": "Коммерции и логистики",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 9,
+    "fields": {
+      "faculty": 2,
+      "short_name": null,
+      "name": "Маркетинга и рекламы",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 10,
+    "fields": {
+      "faculty": 2,
+      "short_name": null,
+      "name": "Международной торговли и таможенного дела",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 11,
+    "fields": {
+      "faculty": 2,
+      "short_name": null,
+      "name": "Экономической теории",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 12,
+    "fields": {
+      "faculty": 2,
+      "short_name": null,
+      "name": "Товароведения и управления качеством",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 13,
+    "fields": {
+      "faculty": 3,
+      "short_name": null,
+      "name": "Информационных систем и прикладной информатики",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 14,
+    "fields": {
+      "faculty": 3,
+      "short_name": null,
+      "name": "Фундаментальной и прикладной математики",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 15,
+    "fields": {
+      "faculty": 3,
+      "short_name": null,
+      "name": "Информационных технологий и защиты информации",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 16,
+    "fields": {
+      "faculty": 3,
+      "short_name": null,
+      "name": "Физического воспитания, спорта и туризма",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 17,
+    "fields": {
+      "faculty": 4,
+      "short_name": null,
+      "name": "Бухгалтерского учета",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 18,
+    "fields": {
+      "faculty": 4,
+      "short_name": null,
+      "name": "Аудита",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 19,
+    "fields": {
+      "faculty": 4,
+      "short_name": null,
+      "name": "Анализа хозяйственной деятельности и прогнозирования",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 20,
+    "fields": {
+      "faculty": 4,
+      "short_name": null,
+      "name": "Статистики, эконометрики и оценки рисков",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 21,
+    "fields": {
+      "faculty": 4,
+      "short_name": null,
+      "name": "Мировой политики и глобализации",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 22,
+    "fields": {
+      "faculty": 5,
+      "short_name": null,
+      "name": "Банковского дела",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 23,
+    "fields": {
+      "faculty": 5,
+      "short_name": null,
+      "name": "Финансов",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 24,
+    "fields": {
+      "faculty": 5,
+      "short_name": null,
+      "name": "Налоги и налогообложение",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 25,
+    "fields": {
+      "faculty": 5,
+      "short_name": null,
+      "name": "Финансового мониторинга и финансовых рынков",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 26,
+    "fields": {
+      "faculty": 5,
+      "short_name": null,
+      "name": "Экономики региона, отраслей и предприятий",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 27,
+    "fields": {
+      "faculty": 5,
+      "short_name": null,
+      "name": "Мировой экономики",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 28,
+    "fields": {
+      "faculty": 6,
+      "short_name": null,
+      "name": "Гражданского права",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 29,
+    "fields": {
+      "faculty": 6,
+      "short_name": null,
+      "name": "Исторических наук и политологии",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 30,
+    "fields": {
+      "faculty": 6,
+      "short_name": null,
+      "name": "Конституционного и муниципального права",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 31,
+    "fields": {
+      "faculty": 6,
+      "short_name": null,
+      "name": "Судебной экспертизы и криминалистики",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 32,
+    "fields": {
+      "faculty": 6,
+      "short_name": null,
+      "name": "Теории и истории государства и права",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 33,
+    "fields": {
+      "faculty": 6,
+      "short_name": null,
+      "name": "Уголовного и уголовно-исполнительного права, криминологии",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 34,
+    "fields": {
+      "faculty": 6,
+      "short_name": null,
+      "name": "Финансового и административного права",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.department",
+    "pk": 35,
+    "fields": {
+      "faculty": 6,
+      "short_name": null,
+      "name": "Гражданского процесса",
+      "rsue_id": null
+    }
+  },
+  {
+    "model": "reference.rating",
+    "pk": 1,
+    "fields": { "text": "рейтинг (20-15-10)" }
+  },
+  {
+    "model": "reference.prizeplace",
+    "pk": 1,
+    "fields": { "rating": 1, "points": 20.0, "name": "1 Место" }
+  },
+  {
+    "model": "reference.prizeplace",
+    "pk": 2,
+    "fields": { "rating": 1, "points": 15.0, "name": "2 Место" }
+  },
+  {
+    "model": "reference.prizeplace",
+    "pk": 3,
+    "fields": { "rating": 1, "points": 10.0, "name": "3 Место" }
+  }
+]

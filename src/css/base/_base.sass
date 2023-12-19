@@ -1,0 +1,91 @@
+@charset 'UTF-8'
+@import '../abstracts/_variables'
+
+*, *:before, *:after
+  box-sizing: border-box
+
+html
+  font-size: 62.5%
+
+body
+  font-size: 1rem
+  font-family: "Golos" !important
+  color: #31498B
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video
+  margin: 0
+  padding: 0
+  border: 0
+  vertical-align: baseline
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  text-size-adjust: none
+
+footer, header, nav, section, main
+  display: block
+
+body, h1, h2, h3, h4, h5, h6
+  line-height: 1
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+input
+  -webkit-appearance: none
+  border-radius: 0
+
+.section-title
+  font-weight: 700
+  line-height: 46px
+  color: $primary
+
+.container, .container-sm, .container-md, .container-lg, .container-xl
+  width: 100%
+  margin-right: auto
+  margin-left: auto
+  padding-top: 130px
+
+.bg-none
+  background: none
+
+.main-btn
+  background: #5B84ED !important
+  color: #fff !important
+  font-weight: 500 !important
+  padding: 10px 50px !important
+
+
+@media (min-width: $breakpoint-xs-max)
+  .container, .container-sm
+    max-width: 720px
+  html
+    font-size: 55.5%
+
+@media (min-width: $breakpoint-sm-max)
+  .container, .container-sm, .container-md
+    max-width: 960px
+  html
+    font-size: 62.5%
+
+@media (min-width: $breakpoint-md-max)
+  .container, .container-sm, .container-md, .container-lg
+    max-width: 1140px
+  html
+    font-size: 62.5%
+
+@media (min-width: $breakpoint-lg-max)
+  .container, .container-sm, .container-md, .container-lg, .container-xl
+    max-width: 1320px
+  html
+    font-size: 62.5%

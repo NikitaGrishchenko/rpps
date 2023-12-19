@@ -1,0 +1,100 @@
+.dialog-detail-category
+  &-file
+    font-size: 1.6rem
+    border-bottom: 1px solid #D3D7EA
+    padding: 35px 0
+    position: relative
+    &:hover .category-file-btn--delete
+      opacity: 1 !important
+      transition: 0.4s
+    &:hover .category-file-btn--change
+      opacity: 1 !important
+      transition: 0.4s
+  &-expert
+    font-size: 1.6rem
+    width: 100%
+
+.category-file
+  &__link a
+    font-size: 1.3rem
+    color: #0f2560 !important
+    opacity: 0.5
+    text-decoration: none
+    &:hover
+      transition: 0.3s
+      text-decoration: underline
+  &__label
+    font-size: 1.1rem
+    color: #0f2560
+    opacity: 0.5
+    margin-bottom: 5px
+  &__name
+    margin-bottom: 3px
+    text-decoration: none
+    color: #0f2560
+    &:hover
+      text-decoration: underline
+  &-btn--delete
+    position: absolute
+    top: 50%
+    left:0
+    color: #C91F1F
+    transform: translate(-20%, -50%)
+    opacity: 0
+    cursor: pointer
+    &:hover
+      opacity: 0.5
+  &-btn--change
+    opacity: 0 !important
+
+
+.coefficient
+  &-input
+    position: relative
+    width: 90%
+  &-btn
+    padding: 3px
+    position: absolute
+    bottom: 20px
+    right: -45px
+    cursor: pointer
+    border: 1px solid #0f2560
+    border-radius: 20px
+    &:hover
+      color: #333
+      border: 1px solid #333
+
+.expert
+  &-card
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    height: 90px
+    &__point
+      font-size: 3rem
+      font-weight: bold
+      width: 140px
+      height: 50px
+      border: 1px solid #d2cece
+      display: flex
+      align-items: center
+      justify-content: center
+    &__toggles
+      height: 50px
+      display: flex
+      align-items: center
+      justify-content: center
+
+  &-form
+    display: flex
+    justify-content: space-between
+    &__result-point-fixed
+      font-size: 3rem
+      width: 140px
+      font-weight: bold
+      color: #ffb300
+      border: 1px solid #d2cece
+      padding: 5px
+      text-align: center
+      height: 50px

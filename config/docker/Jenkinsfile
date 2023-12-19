@@ -1,0 +1,95 @@
+pipeline {
+    agent {
+        node {
+            label "docker"
+        }
+    }
+
+    environment {
+        ANSIBLE_AWX_HOST = "AWX"
+        ZULIP_TOPIC = "jenkins"
+    }
+
+    stages {
+        stage("Login docker to nexus") {
+            steps {
+                withVault(vaultSecrets: [
+                    [path: "CI-CD/nexus", secretValues: [
+                        [envVar: "DOCKER_REGISTRY_URL", vaultKey: "url"],
+                        [envVar: "DOCKER_REGISTRY_GROUP_PORT", vaultKey: "group_port"],
+                        [envVar: "DOCKER_REGISTRY_PRIVATE_PORT", vaultKey: "private_port"],
+                        [envVar: "DOCKER_REGISTRY_USER", vaultKey: "user"],
+                        [envVar: "DOCKER_REGISTRY_PASSWORD", vaultKey: "password"]
+                    ]]
+                ]) {
+                    sh "docker login -u ${ DOCKER_REGISTRY_USER } -p ${ DOCKER_REGISTRY_PASSWORD } ${ DOCKER_REGISTRY_URL }:${ DOCKER_REGISTRY_PRIVATE_PORT }"
+                    sh "docker login -u ${ DOCKER_REGISTRY_USER } -p ${ DOCKER_REGISTRY_PASSWORD } ${ DOCKER_REGISTRY_URL }:${ DOCKER_REGISTRY_GROUP_PORT }"
+                }
+            }
+        }
+        stage("Build docker image") {
+            steps {
+                withVault(vaultSecrets: [
+                    [path: "CI-CD/nexus", secretValues: [
+                        [envVar: "DOCKER_REGISTRY_URL", vaultKey: "url"],
+                        [envVar: "DOCKER_REGISTRY_PRIVATE_PORT", vaultKey: "private_port"]
+                    ]],
+                    [path: "web-projects/$VAULT_NAME", secretValues: [
+                        [envVar: "PROJECT_NAME", vaultKey: "project_name"],
+                        [envVar: "PROJECT_VERSION", vaultKey: "project_version"]
+                    ]]
+                ]) {
+                    sh "docker image build -t ${ DOCKER_REGISTRY_URL }:${ DOCKER_REGISTRY_PRIVATE_PORT }/${ PROJECT_NAME }:${ PROJECT_VERSION } -f config/Dockerfile ."
+                }
+            }
+        }
+        stage("Push docker image") {
+            steps {
+                withVault(vaultSecrets: [
+                    [path: "CI-CD/nexus", secretValues: [
+                        [envVar: "DOCKER_REGISTRY_URL", vaultKey: "url"],
+                        [envVar: "DOCKER_REGISTRY_PRIVATE_PORT", vaultKey: "private_port"]
+                    ]],
+                    [path: "web-projects/$VAULT_NAME", secretValues: [
+                        [envVar: "PROJECT_NAME", vaultKey: "project_name"],
+                        [envVar: "PROJECT_VERSION", vaultKey: "project_version"]
+                    ]]
+                ]) {
+                    sh "docker image push ${ DOCKER_REGISTRY_URL }:${ DOCKER_REGISTRY_PRIVATE_PORT }/${ PROJECT_NAME }:${ PROJECT_VERSION }"
+                }
+            }
+        }
+        stage("Deploying with Ansible to Docker-Compose") {
+            steps {
+                withVault(vaultSecrets: [
+                    [path: "web-projects/$VAULT_NAME", secretValues: [
+                        [envVar: "ANSIBLE_AWX_JOB", vaultKey: "awx_job"]
+                    ]]
+                ]) {
+                    echo "$VAULT_NAME"
+                    ansibleTower(
+                        towerServer: "${ env.ANSIBLE_AWX_HOST }",
+                        templateType: "job",
+                        jobTemplate: "${ ANSIBLE_AWX_JOB }",
+                        importTowerLogs: true,
+                        removeColor: false,
+                        verbose: true,
+                        async :false,
+                    )
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            withVault(vaultSecrets: [
+                [path: "web-projects/$VAULT_NAME", secretValues: [
+                    [envVar: "ZULIP_STREAM", vaultKey: "zulip_stream"]
+                ]]
+            ]) {
+                zulipNotification stream: "${ ZULIP_STREAM }", topic: "${ env.ZULIP_TOPIC }"
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+site_name: Докуметация
+dev_addr: "localhost:3000"
+
+theme:
+  name: material
+
+nav:
+  - О проекте: index.md
+  - Установка: installation.md
+  - Структура: structure-dir.md
+  - Подходы и методологии: approaches_and_methodologies.md
+  - Конечные точки API: api-endpoints.md
+  - Переменные окружения: env-variables.md
+  - Авторизация: authorization.md

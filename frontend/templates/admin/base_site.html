@@ -1,0 +1,21 @@
+{% extends "admin/base_site.html" %}
+{% load static i18n  %}
+
+{% block extrahead %}
+  {{ block.super }}
+  <style>
+    .m-1 {
+      margin: 5px;
+    }
+    .sidebar-link {
+      display: flex;
+      align-items: center;
+    }
+  </style>
+{% endblock %}
+
+
+{% block userlinks %}
+  <a  href="{% url 'api:documentation' %}" target="_blank">{% translate 'Swagger' %}</a> /
+  {{ block.super }}
+{% endblock %}

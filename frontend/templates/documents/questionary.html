@@ -1,0 +1,276 @@
+{% extends "documents/base.html" %}
+{% load documents %}
+
+{% block title %}
+  Анкета
+{% endblock title %}
+
+{% block style %}
+  <style>
+
+    @page {
+      size: landscape;
+      margin: 0.3cm;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 0.75em;
+      font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    }
+
+    table, th, td {
+      border: 1px solid rgba(34, 36, 38, 0.1);
+      font-weight: normal;
+
+    }
+
+    .page-table table th {
+      padding: .78571429em .78571429em;
+    }
+
+    .page-header {
+      text-align: center;
+      width: 10cm;
+      margin: 0 auto;
+    }
+    .page-header__date {
+      margin: .75cm 0;
+    }
+    .page-rating {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 0.5cm;
+    }
+    .page-rating__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    .page-header__info{
+      color: rgba(0, 0, 0, 0.87);
+      margin-top: .3cm;
+    }
+
+    .page-header__date{
+      font-size: 15px;
+      color: rgba(0, 0, 0, 0.70);
+    }
+    .page-rating__result{
+      font-size: 28px;
+      color: #1b1c1d;
+    }
+    .page-rating__short-name{
+      font-size: 14px;
+      color: #1b1c1d;
+      text-transform: uppercase;
+    }
+
+    .text-th-center{
+      text-align: center;
+    }
+
+    .text-th-right{
+      text-align: right;
+    }
+
+    .text-th-number{
+      text-align: left;
+    }
+
+    .page-table__tr{
+      font-weight: bold;
+      background: #f9fafb;
+    }
+
+    .confirmation__manager{
+      padding-top:0.45cm;
+      padding-bottom:0.45cm;
+    }
+
+    .confirmation__teacher{
+      padding-top:0.75cm;
+    }
+
+    .page-table table .th-category3 {
+      padding-left: 30px;
+    }
+
+
+  </style>
+{% endblock style %}
+
+{% block content %}
+  <div class="page">
+
+    <div class="page-header">
+      <div class="page-header__info text-weight-bold">
+        Анкета<br>рейтинговой оценки преподавателя<br>{{ user.last_name }} {{ user.first_name }} {% if user.patronymic %} {{ user.patronymic }} {%endif %}
+        <br>
+        {% if questionnaire_user.user_position.department.name is None %}
+          <span style="color: red;">Укажите кафедру</span>
+        {% else %}
+          кафедры {{questionnaire_user.user_position.department.name}}<br>факультета {{questionnaire_user.user_position.department.faculty}}
+        {% endif %} <br>
+          за {{year}} год
+      </div>
+      <div class="page-header__date">
+        <div class="page-header__text">Анкета сгенерирована: {{date}}</div>
+      </div>
+    </div>
+
+    <div class="page-rating">
+      {% for rating in ratings %}
+        <div class="page-rating__item">
+          <div class="page-rating__result">{{rating.result}}</div>
+          <div class="page-rating__short-name">{{rating.shortName}}</div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="page-table">
+      <table>
+      <tr>
+        <th class="text-th-center page-table__tr">№</th>
+        <th class="text-th-center page-table__tr">Наименование показателя</th>
+        <th class="text-th-center page-table__tr">Единица измерения факт</th>
+        <th class="text-th-center page-table__tr">Переодичность измерения</th>
+        <th class="text-th-center page-table__tr">Весомость показателя</th>
+        <th class="text-th-center page-table__tr">Документ, подтверждающий выполнение показателя</th>
+        <th class="text-th-center page-table__tr">Итоговое значение показателя (в баллах)</th>
+      </tr>
+        {% for main_category in questionnaire_user.questionnaire.main_category.all %}
+
+          <tr>
+            <th class="text-weight-bold" colspan="7">
+            {{ main_category.reference_category.name }}
+            </th>
+          </tr>
+
+          {% for category_1 in main_category.category.all %}
+
+            {% if category_1.type_category is None %}
+              <tr>
+                <th class="text-th-number">{{ category_1.number }}</th>
+                <th  colspan="6">
+                  {{ category_1.reference_category.name }}
+                </th>
+              </tr>
+
+              {% for category_2 in category_1.childrens.all %}
+                {% if category_2.type_category is None %}
+                  <tr>
+                    <th class="text-th-size2 text-th-number">{{category_1.number}}.{{category_2.number }}</th>
+                    <th  colspan="6">
+                      {{ category_2.reference_category.name }}
+                    </th>
+                  </tr>
+
+                  {% for category_3 in category_2.childrens.all %}
+                    {% if category_3.type_category is None %}
+                      <tr>
+                        <th class="text-th-size3 text-th-center"></th>
+                        <th class="th-category3" colspan="6">
+                          {{category_3.reference_category.name }}
+                        </th>
+                      </tr>
+                    {% else %}
+                      <tr>
+                        <th class="text-th-size3 text-th-center"></th>
+                        <th class="th-category3">{{category_3.reference_category.name }}</th>
+                        <th class="text-th-right">
+                          {% if category_3.category_questionnaire_user.all %}
+                            {% with category_3.category_questionnaire_user.all|first as category_user %}
+                            {{ category_user.files.all|length }}
+                            {% endwith %}
+                          {% else %}
+                            0
+                          {% endif %}
+                        </th>
+                        <th class="text-th-right">{{ category_3.periodicity.text }}</th>
+                        <th class="text-th-right">{{ category_3.weight }}</th>
+                        <th>{{ category_3.reference_category.description.text }}</th>
+                        <th class="text-th-right">
+                          {% if category_3.category_questionnaire_user.all %}
+                            {% with category_3.category_questionnaire_user.all|first as category_user %}
+                            {{ category_user.result_point }}
+                            {% endwith %}
+                          {% else %}
+                            0
+                          {% endif %}
+                        </th>
+                      </tr>
+                    {% endif %}
+                  {% endfor %}
+
+                {% else %}
+                  <tr>
+                    <th class="text-th-size2 text-th-number">{{category_1.number}}.{{category_2.number }}</th>
+                    <th>{{ category_2.reference_category.name }}</th>
+                    <th class=" text-th-right">
+                      {% if category_2.category_questionnaire_user.all %}
+                        {% with category_2.category_questionnaire_user.all|first as category_user %}
+                        {{ category_user.files.all|length }}
+                        {% endwith %}
+                      {% else %}
+                        0
+                      {% endif %}
+                    </th>
+                    <th class="text-th-right">{{ category_2.periodicity.text }}</th>
+                    <th class="text-th-right">{{ category_2.weight }}</th>
+                    <th>{{ category_2.reference_category.description.text }}</th>
+                    <th class="text-th-right">
+                      {% if category_2.category_questionnaire_user.all %}
+                        {% with category_2.category_questionnaire_user.all|first as category_user %}
+                        {{ category_user.result_point }}
+                        {% endwith %}
+                      {% else %}
+                        0
+                      {% endif %}
+                    </th>
+                  </tr>
+                {% endif %}
+              {% endfor %}
+
+            {% else %}
+              <tr>
+                <th class="text-th-number">{{ category_1.number }}</th>
+                <th>{{ category_1.reference_category.name }}</th>
+                <th class="text-th-right">
+                  {% if category_1.category_questionnaire_user.all %}
+                    {% with category_1.category_questionnaire_user.all|first as category_user %}
+                    {{ category_user.files.all|length }}
+                    {% endwith %}
+                  {% else %}
+                    0
+                  {% endif %}
+                </th>
+                <th class="text-th-right">{{ category_1.periodicity.text }}</th>
+                <th class="text-th-right">{{ category_1.weight }}</th>
+                <th>{{ category_1.reference_category.description.text }}</th>
+                <th class="text-th-right">
+                  {% if category_1.category_questionnaire_user.all %}
+                    {% with category_1.category_questionnaire_user.all|first as category_user %}
+                    {{ category_user.result_point }}
+                    {% endwith %}
+                  {% else %}
+                    0
+                  {% endif %}
+                </th>
+              </tr>
+            {% endif %}
+
+          {% endfor %}
+
+        {% endfor %}
+
+      </table>
+    </div>
+    <div class="confirmation">
+      <div class="confirmation__teacher">Подпись преподавателя _____________________</div>
+      <div class="confirmation__manager">Подпись заведующего кафедрой _____________________</div>
+      <div class="confirmation__dean">Подпись декана факультета _____________________</div>
+    </div>
+  </div>
+{% endblock content %}

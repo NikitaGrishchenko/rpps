@@ -1,0 +1,42 @@
+@charset 'UTF-8'
+
+.user-card
+  border-radius: 10px
+  background: #E8EAF4
+  padding: 10px 15px
+  display: flex
+  align-items: center
+  position: relative
+  z-index: 1
+  .q-icon:first-child
+    font-size: clamp(40px, 5vw, 60px)
+    width: clamp(40px, 5vw, 60px)
+    height: clamp(40px, 5vw, 60px)
+    border-radius: 50% !important
+    object-fit: cover
+  &__menu
+    background: #F1F3FA
+    box-shadow: none
+    z-index: 0
+    border-radius: 0 0 10px 10px
+
+    &-item
+      font-size: 1.4rem
+      width: 100%
+      display: flex
+      align-items: center
+      .q-item__section
+        flex-wrap: nowrap
+        flex-direction: row
+        justify-content: start
+        align-items: center
+        .q-icon
+          margin-left: 5px
+          font-size: 1.6rem
+
+@media (max-width: $breakpoint-sm-max)
+  .user-card
+    &__menu
+      border-radius: 10px
+      &-item
+        padding-left: 16px

@@ -1,0 +1,42 @@
+pipeline {
+    agent { node { label 'docker' } }
+
+    environment {
+        PROJECT_NAME="project_name"
+        SITE_DOMAIN="project_url"
+        GIT_REPO_URL="git@git.ssh/url.git"
+
+        ANSIBLE_AWX_HOST = "AWX"
+        ANSIBLE_AWX_JOB_TEMPLATE_NAME = "job_name"
+
+        ZULIP_STREAM = "stream_name"
+        ZULIP_TOPIC = "jenkins"
+    }
+
+    stages {
+        stage('Deploying with ansible to server') {
+            steps {
+                ansibleTower(
+                    towerServer: "${ env.ANSIBLE_AWX_HOST }",
+                    templateType: "job",
+                    jobTemplate: "${ env.ANSIBLE_AWX_JOB_TEMPLATE_NAME }",
+                    importTowerLogs: true,
+                    removeColor: false,
+                    verbose: true,
+                    async: false,
+                    extraVars: '''---
+                        project_name: "${ env.PROJECT_NAME }"
+                        site_domain: "${ env.SITE_DOMAIN }"
+                        git_repo_url: "${ env.GIT_REPO_URL }"
+                    ''',
+                )
+            }
+        }
+    }
+
+    post {
+        always {
+            zulipNotification stream: "${ env.ZULIP_STREAM }", topic: "${ env.ZULIP_TOPIC }"
+        }
+    }
+}

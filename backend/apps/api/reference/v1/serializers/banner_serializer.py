@@ -1,0 +1,10 @@
+from apps.api.reference.models import Banner
+from rest_framework import serializers
+
+
+class BannerSerializer(serializers.ModelSerializer):
+    """ Баннер """
+
+    class Meta:
+        model = Banner
+        fields = "__all__"
